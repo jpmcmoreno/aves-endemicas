@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aves de Nuestros Humedales</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: { 50: '#f4f7f4', 100: '#e3ebe3', 200: '#c7d7c9', 300: '#b0c5b2', 600: '#52796f', 700: '#46655d', 800: '#354f52', 900: '#2f3e46' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-sage-50 text-sage-900 font-sans antialiased">
+
+    <header class="py-12 sm:py-14 px-4 text-center max-w-4xl mx-auto">
+        <span class="px-3 py-1 bg-sage-200/60 text-sage-800 rounded-full text-xs font-semibold uppercase tracking-wider">Guía de aves</span>
+        <h1 class="font-heading text-3xl sm:text-5xl font-extrabold text-sage-900 mt-3 mb-4 tracking-tight leading-tight">Aves de nuestros humedales</h1>
+        <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+            Conoce 14 aves que puedes ver y escuchar en los humedales, parques y potreros. Toca un nombre para ir directo a su ficha.
+        </p>
+        <nav class="flex flex-wrap justify-center gap-2 mt-6">
+            <a href="#ave-01" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">01. Tingua de pico amarillo</a>
+            <a href="#ave-02" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">02. Tingua de pico rojo</a>
+            <a href="#ave-03" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">03. Ibis de cara roja (coquito)</a>
+            <a href="#ave-04" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">04. Garcita del ganado</a>
+            <a href="#ave-05" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">05. Garza blanca</a>
+            <a href="#ave-06" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">06. Cucarachero común</a>
+            <a href="#ave-07" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">07. Sinsonte</a>
+            <a href="#ave-08" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">08. Mirla patinaranja</a>
+            <a href="#ave-09" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">09. Jilguero menor</a>
+            <a href="#ave-10" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">10. Copetón</a>
+            <a href="#ave-11" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">11. Monjita</a>
+            <a href="#ave-12" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">12. Guaco</a>
+            <a href="#ave-13" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">13. Torcaza</a>
+            <a href="#ave-14" class="px-3 py-1.5 rounded-full bg-white border border-sage-200 text-xs font-medium text-sage-800 hover:bg-sage-100 transition-colors">14. Ibis escarlata</a>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 pb-16">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- 01. Tingua de pico amarillo -->
+            <article id="ave-01" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/01_tingua_pico_amarillo.jpg" alt="Tingua de pico amarillo" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/01_tingua_pico_amarillo.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">01</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: Rhododendrites · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:American_coot_in_Prospect_Park_(06152).jpg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">Nada como un pato</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Tingua de pico amarillo</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Fulica americana</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">Es un ave negra y gris con el pico y la frente de color blanco amarillento. Aunque parece un pato, no lo es: tiene los dedos con lóbulos que le sirven para nadar y caminar sobre las plantas del agua.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Humedales y lagunas con mucha vegetación.</p>
+                        <p>• <strong>Qué come:</strong> Plantas acuáticas, insectos y caracoles.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/01_tingua_pico_amarillo.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/01_tingua_pico_amarillo.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: NPS y MSU Acoustic Atlas / Jennifer Jerrett · Dominio público · <a href="https://commons.wikimedia.org/wiki/File:Yellowstone_sound_library_-_American_Coots_-_001.mp3" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+            <!-- 02. Tingua de pico rojo -->
+            <article id="ave-02" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/02_tingua_pico_rojo.jpg" alt="Tingua de pico rojo" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/02_tingua_pico_rojo.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">02</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: Casey Klebba · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Common-gallinule-galapagos-casey-klebba.jpg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">Pico rojo con punta amarilla</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Tingua de pico rojo</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Gallinula galeata</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">Es gris oscura, con una placa roja en la frente, el pico rojo con la punta amarilla y una línea blanca en los costados. Camina entre los juncos moviendo la cola.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Orillas de humedales, entre juncos y eneas.</p>
+                        <p>• <strong>Qué come:</strong> Plantas, semillas, insectos y caracoles.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/02_tingua_pico_rojo.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/02_tingua_pico_rojo.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: Manuel Grosselet · CC BY-NC-SA 4.0 · <a href="https://xeno-canto.org/1136177" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+            <!-- 03. Ibis de cara roja (coquito) -->
+            <article id="ave-03" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/03_coquito.jpg" alt="Ibis de cara roja (coquito)" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/03_coquito.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">03</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: Charles J. Sharp · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Bare-faced_ibis_(Phimosus_infuscatus).JPG" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">Pico largo y curvo</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Ibis de cara roja (coquito)</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Phimosus infuscatus</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">Es café oscuro con brillos verdes, tiene la cara sin plumas de color rosado y un pico largo y curvo. Mete el pico en el barro para buscar comida.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Humedales, potreros inundados y parques con agua.</p>
+                        <p>• <strong>Qué come:</strong> Lombrices, insectos y caracoles.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/03_coquito.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/03_coquito.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: Jayrson Araujo de Oliveira · CC BY-NC-SA 4.0 · <a href="https://xeno-canto.org/745517" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+            <!-- 04. Garcita del ganado -->
+            <article id="ave-04" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/04_garcita_del_ganado.jpg" alt="Garcita del ganado" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/04_garcita_del_ganado.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">04</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: Kora27 · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Kuhreiher_am_Strand_in_%C3%84gypten_9528BE.jpg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">Amiga de las vacas</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Garcita del ganado</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Bubulcus ibis</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">Es una garza blanca y pequeña con el pico amarillo. En época de crías le salen plumas color naranja en la cabeza y el pecho. Llegó sola desde África hace más de 100 años.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Potreros, cerca de vacas y caballos.</p>
+                        <p>• <strong>Qué come:</strong> Insectos que saltan cuando camina el ganado.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/04_garcita_del_ganado.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/04_garcita_del_ganado.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: Oliver Komar · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Bubulcus_ibis_-_Western_Cattle_Egret_XC463749.mp3" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+            <!-- 05. Garza blanca -->
+            <article id="ave-05" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/05_garza_blanca.jpg" alt="Garza blanca" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/05_garza_blanca.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">05</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: Chuck Homler (FocusOnWildlife.Me) · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Great_Egret_(Ardea_alba)_in_Breeding_Plumage,_Cape_May_County,_New_Jersey,_USA_(cropped).png" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">La más grande de las blancas</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Garza blanca</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Ardea alba</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">Es una garza alta, de casi un metro, toda blanca, con el pico amarillo y las patas negras. Se queda quieta en el agua y atrapa su comida con un movimiento rápido.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Humedales, lagunas y ríos.</p>
+                        <p>• <strong>Qué come:</strong> Peces, ranas e insectos grandes.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/05_garza_blanca.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/05_garza_blanca.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: Jonathon Jongsma · CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Ardea_alba_-_Great_Egret_XC131650.ogg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+            <!-- 06. Cucarachero común -->
+            <article id="ave-06" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/06_cucarachero.jpg" alt="Cucarachero común" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/06_cucarachero.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">06</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: Paul Danese · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:20250926_house_wren_point_meadows_PD201015.jpg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">Pequeño pero muy cantor</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Cucarachero común</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Troglodytes aedon</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">Es un pajarito café, pequeño, que casi siempre lleva la cola levantada. Su canto es fuerte y alegre. A veces hace su nido en huecos de casas y paredes.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Jardines, parques, casas y potreros.</p>
+                        <p>• <strong>Qué come:</strong> Insectos, arañas y cucarachas.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/06_cucarachero.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/06_cucarachero.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: Jonathon Jongsma · CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Troglodytes_aedon_-_House_Wren_-_XC86753.ogg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+            <!-- 07. Sinsonte -->
+            <article id="ave-07" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/07_sinsonte.jpg" alt="Sinsonte" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/07_sinsonte.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">07</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: http://www.birdphotos.com · CC BY 3.0 · <a href="https://commons.wikimedia.org/wiki/File:TropicalMockingbird.jpg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">El imitador</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Sinsonte</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Mimus gilvus</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">Es gris claro, con las alas más oscuras y una cola larga. Es famoso porque puede imitar el canto de otras aves.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Zonas abiertas, jardines y parques.</p>
+                        <p>• <strong>Qué come:</strong> Insectos y frutos.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/07_sinsonte.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/07_sinsonte.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: Niels Krabbe · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Mimus_gilvus_-_Tropical_Mockingbird_XC251131.mp3" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+            <!-- 08. Mirla patinaranja -->
+            <article id="ave-08" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/08_mirla_patinaranja.jpg" alt="Mirla patinaranja" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/08_mirla_patinaranja.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">08</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: Charles J. Sharp · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Great_thrush_(Turdus_fuscater_quindio)_male_Caldas.jpg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">La más común de Bogotá</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Mirla patinaranja</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Turdus fuscater</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">Es una mirla grande y café oscura, con el pico, las patas y un anillo alrededor del ojo de color naranja. Se ve mucho saltando en los prados.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Parques, jardines y bosques de montaña.</p>
+                        <p>• <strong>Qué come:</strong> Lombrices, insectos y frutos.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/08_mirla_patinaranja.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/08_mirla_patinaranja.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: Niels Krabbe · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Turdus_fuscater_-_Great_Thrush_XC243233.mp3" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+            <!-- 09. Jilguero menor -->
+            <article id="ave-09" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/09_jilguero_menor.jpg" alt="Jilguero menor" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/09_jilguero_menor.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">09</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: Bettina Arrigoni · CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Lesser_Goldfinch_(_Eastern_race)_Kerr_WMA_Kerrville_TX_2018-05-06_12-11-15-2_(42881554344).jpg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">Negro y amarillo</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Jilguero menor</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Spinus psaltria</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">Es un pajarito pequeño. El macho es negro por encima y amarillo brillante por debajo; la hembra es verde oliva. Suele andar en grupos.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Potreros, jardines y bordes de bosque.</p>
+                        <p>• <strong>Qué come:</strong> Semillas de pastos y flores, como el diente de león.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/09_jilguero_menor.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/09_jilguero_menor.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: AMANTEDESAURIOS · CC BY 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Spinus_psaltria_1410091.ogg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+            <!-- 10. Copetón -->
+            <article id="ave-10" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/10_copeton.jpg" alt="Copetón" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/10_copeton.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">10</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: Charles J. Sharp · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Rufous-collared_sparrow_(Zonotrichia_capensis_costaricensis)_2.jpg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">El del copete</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Copetón</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Zonotrichia capensis</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">Es pequeño, con un copete en la cabeza, rayas grises y negras en la cara y un collar café rojizo en el cuello. Es de las aves más comunes y canta desde muy temprano.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Parques, jardines, potreros y ciudades.</p>
+                        <p>• <strong>Qué come:</strong> Semillas e insectos.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/10_copeton.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/10_copeton.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: Niels Krabbe · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Zonotrichia_capensis_-_Rufous-collared_Sparrow_XC243296.mp3" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+            <!-- 11. Monjita -->
+            <article id="ave-11" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/11_monjita.jpg" alt="Monjita" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/11_monjita.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">11</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: Ltshears - Trisha M Shears · Dominio público · <a href="https://commons.wikimedia.org/wiki/File:Yellow_Hooded_Blackbird_004.jpg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">Cabeza amarilla</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Monjita</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Chrysomus icterocephalus</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">El macho es todo negro con la cabeza amarilla, como si llevara una capucha; la hembra es más opaca. Vive en grupos entre los juncos.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Juncos y eneas de los humedales.</p>
+                        <p>• <strong>Qué come:</strong> Insectos y semillas.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/11_monjita.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/11_monjita.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: David Ricardo Rodríguez-Villamil · CC BY-NC-SA 4.0 · <a href="https://xeno-canto.org/1000567" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+            <!-- 12. Guaco -->
+            <article id="ave-12" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/12_guaco.jpg" alt="Guaco" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/12_guaco.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">12</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: ramidos · CC BY 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Nycticorax_nycticorax_457953189.jpg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">La garza de la noche</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Guaco</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Nycticorax nycticorax</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">Es una garza robusta, de cuello corto, gris con la espalda y la cabeza negras y los ojos rojos. Sale a buscar comida al atardecer y de noche. Los jóvenes son cafés con manchas.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Humedales con árboles y juncos.</p>
+                        <p>• <strong>Qué come:</strong> Peces, ranas e insectos.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/12_guaco.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/12_guaco.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: Jens Loose · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Nycticorax_nycticorax_-_Black-crowned_Night_Heron_XC481741.mp3" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+            <!-- 13. Torcaza -->
+            <article id="ave-13" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/13_torcaza.jpg" alt="Torcaza" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/13_torcaza.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">13</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: Bjørn Christian Tørrissen · CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Aruba-Zenaida-auriculata.JPG" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">La paloma de manchas</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Torcaza</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Zenaida auriculata</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">Es una paloma café grisácea con manchas negras en las alas y una línea negra debajo del ojo. Es muy común en ciudades y campos.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Ciudades, parques, potreros y cultivos.</p>
+                        <p>• <strong>Qué come:</strong> Semillas y granos.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/13_torcaza.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/13_torcaza.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: Niels Krabbe · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Zenaida_auriculata_-_Eared_Dove_XC251790.mp3" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+            <!-- 14. Ibis escarlata -->
+            <article id="ave-14" class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden flex flex-col scroll-mt-6">
+                <div class="relative aspect-[4/3] bg-sage-100">
+                    <img src="imagenes/14_ibis_escarlata.jpg" alt="Ibis escarlata" class="w-full h-full object-cover" onerror="sinImagen(this)">
+                    <div class="hueco-imagen hidden absolute inset-0 m-3 border-2 border-dashed border-sage-300 rounded-xl flex-col items-center justify-center text-center p-4 text-sage-600">
+                        <i class="fa-solid fa-image text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold">Espacio para la imagen</p>
+                        <p class="text-xs mt-1">Guárdala como <code class="bg-white px-1 rounded">imagenes/14_ibis_escarlata.jpg</code></p>
+                    </div>
+                    <span class="absolute top-3 left-3 w-9 h-9 rounded-full bg-sage-900/85 text-white font-heading font-bold text-sm flex items-center justify-center">14</span>
+                </div>
+                <div class="px-6 pt-1"><p class="text-[10px] text-gray-400 mt-1">Foto: Rafa Esteve · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Oceanografic_Scarlet_Ibis_02.jpg" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p></div>
+                <div class="p-6 pt-3 flex flex-col flex-1">
+                    <span class="self-start px-2.5 py-0.5 bg-sage-100 text-sage-700 rounded-full text-[11px] font-semibold uppercase tracking-wide mb-2">Rojo intenso</span>
+                    <h2 class="font-heading font-bold text-xl text-sage-900">Ibis escarlata</h2>
+                    <p class="text-xs italic text-gray-500 mb-3">Eudocimus ruber</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">Es toda roja, con las puntas de las alas negras y un pico largo y curvo. Su color viene de los cangrejos y camarones que come. De joven es café, gris y blanca.</p>
+                    <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl mb-4">
+                        <p>• <strong>Dónde vive:</strong> Manglares, costas y los Llanos Orientales.</p>
+                        <p>• <strong>Qué come:</strong> Cangrejos, camarones, insectos y peces pequeños.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs font-semibold text-sage-800 mb-1.5"><i class="fa-solid fa-music mr-1"></i> Escucha su canto</p>
+                        <audio controls preload="metadata" class="w-full" onerror="sinAudio(this)">
+                            <source src="audios/14_ibis_escarlata.mp3" type="audio/mpeg" onerror="sinAudio(this.parentElement)">
+                        </audio>
+                        <div class="hueco-audio hidden border-2 border-dashed border-sage-300 rounded-xl p-3 items-center gap-3 text-sage-600">
+                            <i class="fa-solid fa-volume-high text-xl"></i>
+                            <div>
+                                <p class="text-sm font-semibold">Espacio para el audio</p>
+                                <p class="text-xs">Guárdalo como <code class="bg-sage-50 px-1 rounded">audios/14_ibis_escarlata.mp3</code></p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-1">Audio: Peter Boesman · CC BY-NC-ND 4.0 · <a href="https://xeno-canto.org/222844" target="_blank" rel="noopener" class="underline hover:text-sage-600">fuente</a></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        // Si todavía no hay imagen, se muestra el espacio para ponerla
+        function sinImagen(img) {
+            img.classList.add('hidden');
+            const hueco = img.parentElement.querySelector('.hueco-imagen');
+            hueco.classList.remove('hidden');
+            hueco.classList.add('flex');
+        }
+        // Si todavía no hay audio, se muestra el espacio para ponerlo
+        function sinAudio(audio) {
+            if (!audio || audio.classList.contains('hidden')) return;
+            audio.classList.add('hidden');
+            const hueco = audio.parentElement.querySelector('.hueco-audio');
+            hueco.classList.remove('hidden');
+            hueco.classList.add('flex');
+        }
+    </script>
+</body>
+</html>
