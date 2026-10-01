@@ -1,0 +1,16 @@
+Pon aquí las fotos de cada ave con estos nombres exactos (en .jpg):
+
+01_tingua_pico_amarillo.jpg  ->  Tingua de pico amarillo
+02_tingua_pico_rojo.jpg  ->  Tingua de pico rojo
+03_coquito.jpg  ->  Ibis de cara roja (coquito)
+04_garcita_del_ganado.jpg  ->  Garcita del ganado
+05_garza_blanca.jpg  ->  Garza blanca
+06_cucarachero.jpg  ->  Cucarachero común
+07_sinsonte.jpg  ->  Sinsonte
+08_mirla_patinaranja.jpg  ->  Mirla patinaranja
+09_jilguero_menor.jpg  ->  Jilguero menor
+10_copeton.jpg  ->  Copetón
+11_monjita.jpg  ->  Monjita
+12_guaco.jpg  ->  Guaco
+13_torcaza.jpg  ->  Torcaza
+14_ibis_escarlata.jpg  ->  Ibis escarlata

@@ -1,0 +1,18 @@
+Pon aquí el canto de cada ave con estos nombres exactos (en .mp3):
+
+01_tingua_pico_amarillo.mp3  ->  Tingua de pico amarillo
+02_tingua_pico_rojo.mp3  ->  Tingua de pico rojo
+03_coquito.mp3  ->  Ibis de cara roja (coquito)
+04_garcita_del_ganado.mp3  ->  Garcita del ganado
+05_garza_blanca.mp3  ->  Garza blanca
+06_cucarachero.mp3  ->  Cucarachero común
+07_sinsonte.mp3  ->  Sinsonte
+08_mirla_patinaranja.mp3  ->  Mirla patinaranja
+09_jilguero_menor.mp3  ->  Jilguero menor
+10_copeton.mp3  ->  Copetón
+11_monjita.mp3  ->  Monjita
+12_guaco.mp3  ->  Guaco
+13_torcaza.mp3  ->  Torcaza
+14_ibis_escarlata.mp3  ->  Ibis escarlata
+
+Puedes descargar cantos gratis de https://xeno-canto.org
